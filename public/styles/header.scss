@@ -1,0 +1,21 @@
+.privateMain {
+    .header {
+        display: flex;
+        margin-top: 8px;
+        height: 50px;
+        display: flex;
+        justify-content: flex-end;
+        align-content: center;
+        border-bottom: 1px solid #757575;
+        .account {
+            img{
+                margin: 5px;
+            }
+        }
+        .logout{
+            .btn{
+                margin-right: 10px;
+            }
+        }
+    }
+}

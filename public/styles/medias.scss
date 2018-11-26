@@ -1,0 +1,145 @@
+$min_menu: 'menu closed';
+@media (max-width:1440px) {
+    .main {
+        .login-form {
+            width: 30%;
+            margin: 11% auto 4% auto;
+            h1 {
+                padding-top: 23%;
+            }
+        }
+    }
+}
+
+@media (max-width:1366px) {
+    .main {
+        .login-form {
+            width: 32%;
+            margin: 10% auto 4% auto;
+        }
+    }
+}
+
+@media (max-width:1280px) {
+    .main {
+        .login-form {
+            margin: 8% auto 0;
+            width: 34%;
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    .main {
+        .login-form {
+            margin: 12% auto 0;
+            width: 45%;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .main {
+        .login-form {
+            margin: 16% auto 0;
+            width: 59%;
+        }
+    }
+}
+
+@media (max-width:640px) {
+    .main {
+        .login-form {
+            margin: 20% auto 0;
+            width: 63%;
+        }
+    }
+}
+
+@media (max-width:480px) {
+    .main {
+        .login-form {
+            margin: 32% auto 0;
+            width: 74%;
+        }
+    }
+    .main {
+        .login-form {
+            h1 {
+                font-size: 22px;
+            }
+        }
+    }
+    .main {
+        .login-form {
+            .head {
+                img {
+                    width: 78%;
+                }
+            }
+        }
+    }
+    .main {
+        .login-form {
+            .head {
+                top: -15%;
+                left: 34%;
+            }
+        }
+    }
+    .main {
+        .login-form {
+            form {
+                .btn {
+                    font-weight: 600;
+                    margin-bottom: 4%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:320px) {
+    .main {
+        .login-form {
+            margin: 20% auto 0;
+            width: 100%;
+        }
+    }
+    .main {
+        .login-form {
+            h1 {
+                padding-top: 20%;
+                font-size: 20px;
+            }
+        }
+    }
+    .main {
+        .login-form {
+            .head {
+                img {
+                    width: 60%;
+                }
+            }
+        }
+    }
+    .main {
+        .login-form {
+            .head {
+                top: -15%;
+                left: 36%;
+            }
+        }
+    }
+    .main {
+        .login-form {
+            form {
+                .btn {
+                    font-weight: 600;
+                    font-size: 15px;
+                    padding: 4%;
+                }
+            }
+        }
+    }
+}

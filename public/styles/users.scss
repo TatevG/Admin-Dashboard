@@ -1,0 +1,161 @@
+$font-size-select: 16px;
+$font-family-set: Arial, Helvetica, sans-serif;
+.users{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    .searchField{
+        font-family: $font-family-set;
+        .btn{
+            padding: 10px;
+            margin: 10px;
+            background-color: rgb(138, 43, 226);
+            color: #ffffff;
+            font-weight: bold;
+            &:hover{
+                background-color: rgb(162, 80, 240);
+            }
+        }
+        .fieldsStyle{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1 0 auto;
+            .fields{
+                border-right: 1px solid #e1e1e1;
+                padding-right: 10%;
+                .lsatActivity{
+                    .fieldDescription{
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 15px;
+                        span{
+                            font-size: 15px;
+                            padding: 5px;
+                        }
+                        input{
+                            border: 1px solid #e1e1e1;
+                            border-radius: 5px;
+                            padding: 5px;
+                        }
+                        input[type="date"][value=""]{
+                            &::before{
+                                content: 'DD-MM-YYYY';
+                                position: relative;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            .checkbox{
+                padding-left: 10%;
+                label{
+                    font-size: 15px;
+                    padding-right: 5px;
+                }
+            }
+        }            
+        .searchPart{
+            display: flex;
+            justify-content: space-around;
+            .searchInput{
+                height: 30px;
+                border: 1px solid #e1e1e1;
+                border-radius: 5px;
+                margin-top: 42px;
+                padding-left: 5px;
+                width: 20%;
+            }
+                .fieldDescription{
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 15px;
+                    span{
+                        font-size: 15px;
+                        padding: 5px;
+                    }
+                    input{
+                        border: 1px solid #e1e1e1;
+                        border-radius: 5px;
+                        padding: 5px;
+                    }
+                    input[type="date"][value=""]{
+                        &::before{
+                            content: 'DD-MM-YYYY';
+                            position: relative;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            
+                        }
+                    }
+                }
+        }
+        .selectSize{
+            text-align: center;
+            margin-top: 35px;
+            padding-top: 15px;
+            border-top: 1px solid #e1e1e1;
+            .selectOption{
+                margin-top: 10px;
+                width: 30%;
+            }
+        }
+    }
+    .usersTable {
+        width: 98%;
+        margin: 15px 10px 0 10px;
+        border-collapse: collapse;
+        font-family: $font-family-set;
+        thead {
+            tr {
+                border-bottom: 1px solid #e5e5e5;
+                th:not(:last-child){
+                    text-align: left;
+                    padding: 10px 0 10px 5px;
+                }
+                th {
+                    &:hover {
+                        background-color: #F5F5F5;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        tbody {
+            tr {
+                border-bottom: 1px solid #e5e5e5;
+                td {
+                    padding: 6px;
+                    max-width: 100px;
+                    overflow: hidden;
+                    .icon {
+                        width: 32px;
+                        height: 32px;
+                        object-fit: cover;
+                        margin: 10px;
+                    }
+                    .agentToCard {
+                        display: flex;
+                        flex-direction: column;
+                        padding-top: 15px;
+                        padding-left: 5px;
+                        justify-content: center;
+                        width: 33%;
+                        div{
+                            label{
+                                div{
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

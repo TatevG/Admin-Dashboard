@@ -1,0 +1,102 @@
+$font-size-select: 16px;
+$font-family-set: Arial, Helvetica, sans-serif;
+.threeInRow {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #e1e1e1;
+    font-family: $font-family-set;
+    .section {
+        display: flex;
+        flex-direction: column;
+        padding-top: 15px;
+        padding-left: 10px;
+        justify-content: flex-start;
+        align-items: end;
+        width: 33%;
+        .inputFields {
+            display: none;
+        }
+        .headPart {
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            h4 {
+                padding-top: 8px;
+                padding-right: 8px;
+            }
+        }
+        &.hide {
+            .select {
+                display: none;
+            }
+            .inputFields {
+                display: flex;
+                flex-direction: inherit;
+                width: 90%;
+                justify-content: center;
+            }
+        }
+        .select {
+            display: block;
+            margin-top: 7px;
+            width: 90%;
+            height: 36px;
+            color: #999999;
+        }
+    }
+    .shopOwner {
+        display: flex;
+        flex-direction: column;
+        padding-top: 15px;
+        padding-left: 5px;
+        justify-content: flex-start;
+        align-items: end;
+        width: 33%;
+        .inputFields {
+            display: none;
+        }
+        .headPart {
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            h4 {
+                padding-top: 8px;
+                padding-right: 8px;
+            }
+        }
+        &.hide {
+            .selectOption {
+                display: none;
+            }
+            .inputFields {
+                display: flex;
+                flex-direction: inherit;
+                width: 90%;
+                justify-content: center;
+            }
+        }
+        .selectOption {
+            margin-top: 7px;
+            width: 90%;
+            height: 36px;
+            color: #999999;
+            font-size: $font-size-select;
+        }
+    }
+    .shopManager {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-left: 5px;
+        width: 33%;
+        padding-bottom: 8px;
+        h4 {
+            justify-content: flex-start;
+            padding-top: 34px;
+            margin-bottom: 10px;
+        }
+    }
+}

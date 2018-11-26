@@ -1,0 +1,171 @@
+$font-size-select: 16px;
+$font-family-set: Arial, Helvetica, sans-serif;
+.cards{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    .searchField{
+        margin: 15px;
+        display: flex;
+        flex-direction: row;
+        flex: 0 0 auto;
+        div{
+            h3{
+                margin-bottom: 10px;
+            }
+        }
+        .selectSize{
+            width: 35%;
+            .selectOption{
+                width: 80%;
+                height: 36px;
+            }
+        }
+        .select{
+            width: 35%;
+            .selectAsync{
+                width: 80%;
+            }
+        }
+        .assignedRadio{
+            width: 25%;
+            .radios{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 6px;
+                .chooseRadio{
+                    margin-right: 2%;
+                    margin-top: 3%;
+                }
+            }
+        }
+    }
+    .cardsTable {
+        width: 98%;
+        margin: 15px 10px 0 10px;
+        border-collapse: collapse;
+        thead {
+            tr {
+                border-bottom: 1px solid #e5e5e5;
+                th:not(:last-child){
+                    text-align: left;
+                    padding: 10px 0 10px 5px;
+                }
+                th {
+                    &:hover {
+                        background-color: #F5F5F5;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        tbody {
+            tr {
+                border-bottom: 1px solid #e5e5e5;
+                td {
+                    padding: 6px 0;
+                    .icon {
+                        width: 32px;
+                        height: 32px;
+                        object-fit: cover;
+                        margin: 10px;
+                    }
+                }
+                td:last-child {
+                    text-align: center;
+                    cursor: pointer;
+                }
+            }
+            .addCardShop {
+                margin: 0  auto;
+                td{
+                    img{
+                        float: right;
+                        padding-right: 6%;
+                    }
+                }
+            }
+        }
+    }
+    .addCardPopup {
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        .popup_inner{
+            background-color: #fff;
+            width: 40%;
+            margin: auto;
+            margin-top: 10%;
+            margin-bottom: 1%;
+            border-radius: 5px;
+            .headPart {
+                display: flex;
+                padding-top: 2%;
+                padding-right: 25%;
+                justify-content: center;
+            }
+            .range {
+                display: flex;
+                justify-content: center;
+                margin-left: 4%;
+                padding: 10px;
+                margin-top: 7px;
+                color: #999;
+                .rangeElems{
+                    .rangeInput{
+                        outline: none;
+                        color: #757575;
+                        margin: 8px 0;
+                        padding: 8px 0;
+                        border-radius: 5px;
+                        width: 90%;
+                        padding-left: 10px;
+                        border: 1px solid #e1e1e1;
+                        font-size: $font-size-select;
+                    }
+                } 
+            }
+            .single {
+                display: none;
+            }
+            &.hide {
+                .range {
+                    display: none;
+                }
+                .single {
+                    display: flex;
+                    justify-content: center;
+                    padding: 10px;
+                    margin-left: 4%;
+                    margin-top: 7px;
+                    color: #999999;
+                }
+            }
+            .selectAgent{
+                display: block;
+                text-align: center;
+                h3{
+                    color: #999999;
+                }
+            }
+            .buttons {
+                height: 50px;
+                display: flex;
+                flex-direction: row;
+                margin-top: 15px;
+                justify-content: space-around;
+                .btn:last-child{
+                    &:enabled{
+                        background-color: blueviolet;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

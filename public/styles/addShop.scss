@@ -1,0 +1,283 @@
+@import './threeInRow.scss';
+$font-size-select: 16px;
+$font-family-set: Arial,
+Helvetica,
+sans-serif;
+.addShop {
+    display: block;
+    width: 100%;
+    font-family: $font-family-set;
+    .shopDetails {
+        border-bottom: 1px solid #e1e1e1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-family: $font-family-set;
+        padding-bottom: 15px;
+        h4 {
+            padding: 15px 0 0 15px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            width: 100%;
+            text-align: center;
+            margin-top: 1%;
+        }
+        input:not([type=checkbox]):not(.shopSelect) {
+            margin: 0 10px;
+            padding: 10px 0;
+            border-radius: 5px;
+            padding-left: 10px;
+            border: 1px solid #e1e1e1;
+            outline: none;
+            font-size: $font-size-select;
+        }
+        .shopNames {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .namesWrapper {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            .valid {
+                width: 30%;
+            }
+            .error {
+                border-bottom: 1px solid red !important;
+            }
+        }
+        .shopImage {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+            align-items: center;
+            .imageWrapper {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                .image {
+                    padding: 20px;
+                    width: 150px;
+                    object-fit: cover;
+                }
+                input {
+                    display: none;
+                }
+                textarea {
+                    max-height: 200px;
+                    height: 100px;
+                    resize: vertical;
+                    border: 1px solid #e1e1e1;
+                    border-radius: 5px;
+                    width: 170px;
+                    margin: 20px 0;
+                    padding-left: 10px;
+                    padding-top: 5px;
+                }
+            }
+        }
+        .location {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+            align-items: center;
+            .addressWrapper {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+        .mapAndListWrapper {
+            display: flex;
+            max-width: 100%;
+            .googleMaps {
+                flex: 0 0 60%;
+                padding-left: 3%;
+                padding-top: 3%;
+            }
+            .bonusAndComission {
+                display: flex;
+                padding: 23px;
+                align-items: flex-end;
+                input {
+                    width: 50px;
+                }
+            }
+        }
+        .bottomPart {
+            display: flex;
+            justify-content: start;
+            padding-left: 2%;
+            padding-top: 2%;
+            .bottomWrapper {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            .shopBonus {
+                width: 115px;
+                .error {
+                    border-bottom: 1px solid red !important;
+                }
+            }
+            .shopComission {
+                width: 115px;
+                .error {
+                    border-bottom: 1px solid red !important;
+                }
+            }
+            .shopCheckbox {
+                display: flex;
+                flex-direction: row;
+                h4 {
+                    padding-top: 15px;
+                }
+                input {
+                    margin: 18px 8px;
+                    padding: 10px 0 10px 10px;
+                }
+            }
+            .shopSelect {
+                display: block;
+                width: 220px;
+                padding-left: 5px;
+                padding-bottom: 1%;
+                input {
+                    border: none !important;
+                    margin: 0 !important;
+                    padding: 8px 0 0 0 !important;
+                }
+            }
+        }
+    }
+    .shopUser {
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 auto;
+        font-family: $font-family-set;
+        h2 {
+            width: 100%;
+            text-align: center;
+            margin-top: 1%;
+        }
+        .userTable {
+            width: 99%;
+            margin: 15px 10px 0 10px;
+            border-collapse: collapse;
+            thead {
+                tr {
+                    border-bottom: 1px solid #e5e5e5;
+                    text-align: left;
+                    th:not(:nth-last-child(1)) {
+                        text-align: left;
+                        width: 100px;
+                        padding: 10px 0 10px 5px;
+                    }
+                    th {
+                        &:hover {
+                            background-color: #F5F5F5;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    border-bottom: 1px solid #e5e5e5;
+                    td {
+                        padding: 4px 0;
+                        .icon {
+                            width: 32px;
+                            height: 32px;
+                            object-fit: cover;
+                            margin: 10px;
+                            cursor: pointer;
+                        }
+                    }
+                    td:nth-last-child(1) {
+                        text-align: center;
+                        cursor: pointer;
+                    }
+                    .showSelected {
+                        color: red;
+                        width: 150px;
+                    }
+                }
+                .addRow {
+                    .userSelect {
+                        display: block;
+                        width: 220px;
+                        padding-left: 5px;
+                        padding-bottom: 1%;
+                        font-size: $font-size-select;
+                        input {
+                            border: none !important;
+                            margin: 0 !important;
+                            padding: 8px 0 0 0 !important;
+                        }
+                    }
+                    margin: 5px 0;
+                    td:not(:nth-last-child(2)) {
+                        width: 135px;
+                        input {
+                            width: 98%;
+                            padding: 5px 0;
+                            border-radius: 5px;
+                            border: 1px solid #e1e1e1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    button {
+        margin: auto;
+        display: block;
+        width: 30%;
+        border: none;
+        border-radius: 5px;
+        height: 60px;
+        background: #373A47;
+        color: #e1e1e1;
+        font-size: $font-size-select;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        transition: .4s;
+        &:hover {
+            transition: .4s;
+            cursor: pointer;
+            background: #2C2E39;
+        }
+        &:disabled {
+            background-color: black;
+            cursor: unset;
+            @keyframes spin {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+            &::after {
+                content: '';
+                position: relative;
+                display: inline-block;
+                height: 20px;
+                width: 20px;
+                left: 7px;
+                top: 3px;
+                box-sizing: border-box;
+                border-radius: 50%;
+                border: 1px solid #ccc;
+                border-top-color: #07d;
+                animation-name: spin;
+                animation-duration: 1000ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+        }
+    }
+}

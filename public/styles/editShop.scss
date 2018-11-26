@@ -1,0 +1,358 @@
+$font-size-select: 16px;
+$font-family-set: Arial, Helvetica, sans-serif;
+
+.editShop{
+    display: block;
+    width: 100%;
+    h2{
+        text-align: center;
+        margin: 10px 0;
+        font-family: $font-family-set;
+    }
+    .editDetails{
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid #e1e1e1;
+        
+        .threeInColomn{
+            display: flex;
+            flex-direction: column;
+            margin-top: 4px;
+            flex: 0 0 30%;
+            .section{
+                width: 100%;
+                .headPart{
+                    h4{
+                        font-size: $font-size-select;
+                        font-family: $font-family-set;
+                        padding: 10px 0;
+                    }
+                }
+                .select{
+                    width: 80%;
+                }
+            }
+            .shopOwner{
+                margin-top: 5px;
+                .headPart{
+                    h4{
+                        font-size: $font-size-select;
+                        font-family: $font-family-set;
+                        padding: 11px 0;
+                    }
+                }
+                .selectOption{
+                    height: 40px;
+                    width: 80%;
+                }
+            }
+            .shopDetailsSelBonCom{
+                .shopSelect {
+                    display: block;
+                    width: 80%;
+                    padding-left: 5px;
+                    padding-bottom: 1%;
+                    h4{
+                        font-size: $font-size-select;
+                        font-family: $font-family-set;
+                        padding: 20px 0 10px 0;
+                    }
+                    input {
+                        border: none !important;
+                        margin: 0 !important;
+                        padding: 8px 0 0 0 !important;
+                    }
+                }
+                .bonusAndComission{
+                    font-family: $font-family-set;
+                    margin-top: 15px;
+                    text-align: center;
+                    input{
+                        width: 50px;
+                    }
+                }
+            }
+            .shopManager{
+                h4{
+                    font-size: $font-size-select;
+                    font-family: $font-family-set;
+                    padding: 10px 0;
+                }
+                .shopManagerInfo{
+                    border: 1px solid #eee;
+                    padding: 5px 0 5px 10px;
+                    border-radius: 5px;
+                    width: 80%;
+                }
+            }
+        }
+        .editShopDetails {
+            display: flex;
+            flex-direction: column;
+            flex: 1 0 auto;
+            align-items: center;
+            justify-content: flex-start;
+            font-family: $font-family-set;
+            padding-bottom: 15px;
+            h4 {
+                padding: 15px 0 0 15px;
+                margin-bottom: 10px;
+            }
+            h2 {
+                width: 100%;
+                text-align: center;
+                margin-top: 1%;
+            }
+            input:not([type=checkbox]):not(.shopSelect) {
+                margin: 0 10px;
+                padding: 10px 0;
+                border-radius: 5px;
+                padding-left: 10px;
+                border: 1px solid #e1e1e1;
+                outline: none;
+                font-size: $font-size-select;
+            }
+            .shopNames{
+                display: flex;
+                flex-direction: column;
+                .namesWrapper{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                }
+                .valid {
+                    width: 30%;
+                }
+                .error {
+                    border-bottom: 1px solid red !important;
+                }
+                
+            }
+            .shopImage{
+                display: flex;
+                flex-direction: column;
+                width: 665px;
+                margin-top: 20px;
+                .imageWrapper{
+                    display: flex;
+                    flex-direction: row;
+                    .image{
+                        padding: 0 20px;
+                        width: 150px;
+                        object-fit: cover;
+                    }
+                    input{
+                        display: none;
+                    }
+                    textarea{
+                        resize: none;
+                        border: 1px solid #e1e1e1;
+                        border-radius: 5px;
+                        width: 170px;
+                        padding-left: 10px;
+                        padding-top: 5px;
+                    }
+                }
+            }
+            .location{
+                display: flex;
+                flex-direction: column;
+                .addressWrapper{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                }
+                .googleMaps{
+                    padding-left: 3%;
+                    padding-top: 3%;
+                }
+            }
+            .bottomPart{
+                display: block;
+                width: 70%;
+                margin-top: 20px;
+                .bottomWrapper{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    .shopBonus{
+                        width: 115px;
+                        .error {
+                            border-bottom: 1px solid red !important;
+                        } 
+                    }
+                    .shopComission {
+                        width: 115px;
+                        .error {
+                            border-bottom: 1px solid red !important;
+                        } 
+                    }
+                    .shopCheckbox{
+                        display: flex;
+                        flex-direction: row;
+                        h4 {
+                            padding-top: 15px;
+                        }
+                        input {
+                            margin: 18px 8px;
+                            padding: 10px 0 10px 10px;
+                        }
+                    }
+                    .updateBtn{
+                        width: 110px;
+                        height: 35px;
+                        margin-left: 35px;
+                        border: none;
+                        border-radius: 5px;
+                        background: #373a47;
+                        color: #e1e1e1;
+                        font-size: 16px;
+                        transition: .4s;
+                        text-align: center;
+                        &:hover {
+                            transition: .4s;
+                            cursor: pointer;
+                            background: #2C2E39;
+                        }
+                        &:disabled{
+                            background-color: #000;
+                            cursor: unset;
+                            padding-bottom: 5px;
+                            @keyframes spin {
+                                from {
+                                    transform:rotate(0deg);
+                                }
+                                to {
+                                    transform:rotate(360deg);
+                                }
+                            }
+                            &::after{
+                                content: '';
+                                position: relative;
+                                display: inline-block;
+                                height: 16px;
+                                width: 16px;
+                                right: -9px;
+                                top: 4px;
+                                box-sizing: border-box;
+                                border-radius: 50%;
+                                border: 1px solid #ccc;
+                                border-top-color: #07d;
+                                animation-name: spin;
+                                animation-duration: 1000ms;
+                                animation-iteration-count: infinite;
+                                animation-timing-function: linear;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .editShopUser {
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 auto;
+        font-family: $font-family-set;
+        h2 {
+            width: 100%;
+            text-align: center;
+            margin-top: 1%;
+        }
+        .userTable {
+            width: 99%;
+            margin: 15px 10px 0 10px;
+            border-collapse: collapse;
+            thead{
+                tr{
+                    border-bottom: 1px solid #e5e5e5; 
+                    text-align: left;
+                    th:not(:nth-last-child(1)) {
+                        text-align: left;
+                        width: 100px;
+                        padding: 10px 0 10px 5px;
+                    }
+                    th {
+                        &:hover {
+                            background-color: #F5F5F5;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    border-bottom: 1px solid #e5e5e5;
+                    td{
+                        padding: 4px 0;
+                        .icon {
+                            width: 32px;
+                            height: 32px;
+                            object-fit: cover;
+                            margin: 10px;
+                            cursor: pointer;
+                        }
+                    }
+                    td:nth-last-child(1) {
+                        text-align: center;
+                        cursor: pointer;
+                    }
+                    .changeVal{
+                        border: none;
+                        border-radius: 5px;
+                        height: 25px;
+                        width: 60%;
+                    }
+                    .showSelected{
+                        width: 150px;  
+                    }
+                }
+                .addRow {
+                    .userSelect {
+                        display: block;
+                        width: 220px;
+                        padding-left: 5px;
+                        padding-bottom: 1%;
+                        font-size: $font-size-select;
+                        input {
+                            border: none !important;
+                            margin: 0 !important;
+                            padding: 8px 0 0 0 !important;
+                        }
+                    }
+                    margin: 5px 0;
+                    td:not(:nth-last-child(2)) {
+                        width: 135px;
+                        input {
+                            width: 98%;
+                            padding: 5px 0;
+                            border-radius: 5px;
+                            border: 1px solid #e1e1e1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .deleteShop {
+        display: block;
+        margin-right: 10px;
+        width: 15%;
+        float: right;
+        border: none;
+        border-radius: 5px;
+        height: 60px;
+        background: white;
+        color: red;
+        font-size: 16px;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        transition: .4s;
+        &:hover {
+            transition: .4s;
+            cursor: pointer;
+            background: #CDCDCD;
+        }
+    }
+}

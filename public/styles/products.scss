@@ -1,0 +1,183 @@
+.productsList{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    .btn{
+        padding: 10px;
+        margin: 10px;
+        background-color: rgb(138, 43, 226);
+        color: #ffffff;
+        font-weight: bold;
+        &:hover{
+            background-color: rgb(162, 80, 240);
+        }
+    }
+    .selectSize{
+        margin-top: 15px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        h4{
+            margin-bottom: 5px;
+        }
+    }
+    .productsTable {
+        width: 98%;
+        margin: 15px 10px 0 10px;
+        border-collapse: collapse;
+        thead {
+            tr {
+                border-bottom: 1px solid #e5e5e5;
+                th:not(:last-child){
+                    text-align: left;
+                    padding: 10px 0 10px 5px;
+                }
+                th {
+                    &:hover {
+                        background-color: #F5F5F5;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        tbody {
+            tr {
+                border-bottom: 1px solid #e5e5e5;
+                td {
+                    padding: 6px 0;
+                    .icon {
+                        width: 32px;
+                        height: 32px;
+                        object-fit: cover;
+                        margin: 10px;
+                    }
+                }
+                td:last-child {
+                    text-align: center;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .editProductPopup {
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        .popup_inner {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            margin: auto;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            background: white;
+            border-radius: 5px;
+            border: 1px solid #757575;
+            padding: 15px 15px;
+            h2{
+                text-align: center;
+            }
+            label{
+                h3{
+                    padding: 10px 5px 0;
+                }
+                input{
+                    padding: 10px 15px;
+                    width: 100%;
+                }
+            }
+            .buttons {
+                height: 50px;
+                display: flex;
+                flex-direction: row;
+                margin-top: 15px;
+                justify-content: space-around;
+                .btn:last-child{
+                    &:enabled{
+                        background-color: blueviolet;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    .addProductShop {
+        margin: 0  auto;
+        td{
+            img{
+                float: right;
+                padding-right: 4%;
+            }
+        }
+    }
+    .addProductPopup {
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        .popup_inner {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            height: 485px;            
+            margin: auto;
+            margin-top: .5%;
+            background: white;
+            border-radius: 5px;
+            border: 1px solid #757575;
+            padding: 0 15px;
+            h2{
+                text-align: center;
+                margin-top: 15px;
+            }
+            label{
+                h3{
+                    padding: 10px 5px 0;
+                }
+                input{
+                    padding: 10px 15px;
+                    width: 100%;
+                }
+                input[type="date"][value=""]{
+                    &::before{
+                        content: 'MM-DD-YYYY';
+                        position: relative;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        
+                    }
+                }
+            }
+            .selectOption{
+                width: 100%;
+                height: 40px;
+                padding: 10px 15px;
+                margin: 8px 0;
+            }
+            .buttons {
+                height: 50px;
+                display: flex;
+                flex-direction: row;
+                margin-top: 15px;
+                justify-content: space-around;
+                .btn:last-child{
+                    &:enabled{
+                        background-color: blueviolet;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,110 @@
+.transactions{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    .searchField{
+        .btn{
+            padding: 10px;
+            margin: 10px;
+            background-color: rgb(138, 43, 226);
+            color: #ffffff;
+            font-weight: bold;
+            &:hover{
+                background-color: rgb(162, 80, 240);
+            }
+        }
+        .fields{
+            display: flex;
+            flex-direction: column;
+            margin-left: 18%;
+            .selects{
+                display: flex;
+                .shopSelect {
+                    display: block;
+                    width: 40%;
+                    margin: 10px 10px 10px 0;
+                    padding-bottom: 1%;
+                    input {
+                        border: none !important;
+                        margin: 0 !important;
+                        padding: 8px 0 0 0 !important;
+                    }
+                }
+            }
+            .inputs{
+                display: flex;
+                input{
+                    padding: 5px 10px;
+                    width: 40%;
+                    margin: 10px 10px 10px 0;
+                    border: 1px solid #e1e1e1;
+                    border-radius: 5px;
+                }
+                input[type="date"][value=""]{
+                    &::before{
+                        content: 'MM-DD-YYYY';
+                        position: relative;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        
+                    }
+                }
+            }
+        }
+        .selectSize{
+            text-align: center;
+            margin-top: 1%;
+            .selectOption{
+                margin-top: 10px;
+                width: 30%;
+            }
+        }
+    }
+    .transactionsTable {
+        width: 98%;
+        margin: 15px 10px 0 10px;
+        border-collapse: collapse;
+        thead {
+            tr {
+                border-bottom: 1px solid #e5e5e5;
+                th{
+                    text-align: left;
+                    padding: 10px 0 10px 5px;
+                }
+                th {
+                    &:hover {
+                        background-color: #F5F5F5;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        tbody {
+            tr {
+                border-bottom: 1px solid #e5e5e5;
+                td {
+                    padding: 6px;
+                    a{
+                        color: #333333;
+                        &:visited{
+                            color: #333333;
+                        }
+                        &:hover{
+                            color: blueviolet;
+                        }
+                    }
+                }
+            }
+            .red{
+                color: red;
+                td{
+                    a{
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}
